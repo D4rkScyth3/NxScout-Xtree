@@ -97,7 +97,8 @@ cd NxScout-Xtree
 python main.py
 ```
 
-![NxScout-Xtree](assets/nxscout-xtree.png)
+![NxScout-Xtree](assets/nxscout-xtree.jpg)
+
 
 
 
