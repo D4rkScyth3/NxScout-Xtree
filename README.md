@@ -96,10 +96,13 @@ cd NxScout-Xtree
 ```
 python main.py
 ```
+<br><br>
 
 ![NxScout-Xtree](assets/nxscout-xtree.jpg)
 
+<br>
+## Disclaimer:
 
-
-
-
+This project is created for educational and research purposes only.  
+The author is not responsible for any misuse or damage caused by this tool.  
+Use this software only on systems you own or have explicit permission to test.
