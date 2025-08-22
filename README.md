@@ -1,10 +1,55 @@
-\# 🔎 NX-Scout XTree
+# NX-Scout XTree
 
 
 
-NX-Scout XTree is a \*\*lightweight Nmap automation tool\*\* written in Python.  
+NX-Scout XTree is a lightweight __Nmap automation tool__ written in Python.  
 
-It helps security professionals and learners quickly perform host discovery, port scanning, and vulnerability checks with a clean \*\*tree-style tabular report\*\*.
+It helps security professionals and learners quickly perform host discovery, port scanning, and vulnerability checks with a clean __tree-style tabular report__.
+
+
+---
+
+
+
+## Features
+
+#### Multiple Scan Profiles :-
+
+* **Discover** -> *Host discovery (ping sweep, checks which hosts are up)*  
+
+* **Quick** -> *Fast scan of common ports with service version detection*  
+
+* **Deep** -> *Full port scan with detailed service versions* 
+
+* **Vuln** -> *Full scan + common NSE vulnerability scripts*  
+  
+#### Clean Reports :-
+
+* *Minimal tree-style console view*
+
+* *Optional HTML/JSON/XML export*
+
+#### Details per host :- 
+
+- *IP Address*  
+
+- *MAC Address \& Vendor*  
+
+- *Host state (up/down)*  
+
+- *Open Ports + Services + Versions*  
+
+- *Vulnerability findings (if applicable)*  
+
+
+
+#### Flexible Target Input :-
+
+- *Single IP → `192.168.17.10`*  
+
+- *Range → `192.168.17.1-50`*  
+
+- *Subnet (CIDR) → `192.168.17.0/24`*  
 
 
 
@@ -12,71 +57,48 @@ It helps security professionals and learners quickly perform host discovery, por
 
 
 
-\## ✨ Features
-
-\- 🎯 \*\*Multiple Scan Profiles\*\*  
-
-&nbsp; - \*\*Discover\*\* → Host discovery (ping sweep, checks which hosts are up)  
-
-&nbsp; - \*\*Quick\*\* → Fast scan of common ports with service version detection  
-
-&nbsp; - \*\*Deep\*\* → Full port scan with detailed service versions  
-
-&nbsp; - \*\*Vuln\*\* → Full scan + common NSE vulnerability scripts (⚠️ may be intrusive)  
+## Installation
 
 
 
-\- 📊 \*\*Clean Reports\*\*  
+#### Requirements :-
 
-&nbsp; - Minimal \*\*tree-style console view\*\*  
+\~ In Windows:
 
-&nbsp; - Optional \*\*HTML/JSON/XML export\*\*  
+\[Python 3.8+] (https://www.python.org/downloads/) -> *installed \& added to PATH*
 
+\[Nmap] (https://nmap.org/download) -> *installed \& added to PATH*
 
+<br><br>
+\~ In Linux:
 
-\- 🖥️ \*\*Details per host\*\*  
+**Python**
+```
+sudo apt update & sudo apt upgrade -y
+```
+```
+sudo apt install python3 -y
+sudo apt install python3-pip -y
+```
+**Nmap**
+```
+sudo apt install nmap -y
+```
+### Uses
 
-&nbsp; - IP Address  
+\# *Clone the repo ->*  
+```
+git clone https://github.com/D4rkScyth3/NxScout-Xtree.git
+cd NxScout-Xtree
+```
 
-&nbsp; - MAC Address \& Vendor  
+\# *Simply run ->*
+```
+python main.py
+```
 
-&nbsp; - Host state (up/down)  
+![NxScout-Xtree](assets/nxscout-xtree.png)
 
-&nbsp; - Open Ports + Services + Versions  
-
-&nbsp; - Vulnerability findings (if applicable)  
-
-
-
-\- 🚀 \*\*Flexible Target Input\*\*  
-
-&nbsp; - Single IP → `192.168.17.10`  
-
-&nbsp; - Range → `192.168.17.1-50`  
-
-&nbsp; - Subnet (CIDR) → `192.168.17.0/24`  
-
-
-
----
-
-
-
-\## 📦 Installation
-
-
-
-\### Requirements
-
-\- Python \*\*3.8+\*\*
-
-\- \[Nmap](https://nmap.org/download.html) installed \& added to PATH
-
-\- Python packages:
-
-&nbsp; ```bash
-
-&nbsp; pip install -r requirements.txt
 
 
 
